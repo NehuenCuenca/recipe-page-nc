@@ -50,6 +50,7 @@ main {
 #recipe-preview p {
     font: 500 italic .2rem Montserrat;
     width: 60%;
+    padding-left: 3%;
 }
 #recipe-preview img {
     height: auto;
