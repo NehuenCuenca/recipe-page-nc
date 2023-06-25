@@ -47,14 +47,31 @@ main {
     margin: 0;
     font: 700 2.5rem Playfair Display;
 }
-#recipe-preview p {
-    font: 500 italic .2rem Montserrat;
-    width: 60%;
-    padding-left: 3%;
+#recipe-preview .description {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2% 65%;
+    grid-template-rows: auto;
+    grid-template-areas: "svg text";
+    gap: 0vh 1vh;
 }
+#recipe-preview p {
+    grid-area: text;
+    font: 500 italic .2rem Montserrat;
+    margin: 0;
+}
+
+#recipe-preview #six-dots {
+    grid-area: svg;
+    width: 13px;
+    height: 8px;
+    margin-top: 25%;
+}
+
 #recipe-preview img {
     height: auto;
     width: 100%;
+    margin-top: 5vh;
 }
 
 
