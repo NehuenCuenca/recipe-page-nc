@@ -53,11 +53,11 @@ main {
     grid-template-columns: 2% 65%;
     grid-template-rows: auto;
     grid-template-areas: "svg text";
-    gap: 0vh 1vh;
+    gap: 0vh 1vw;
 }
 #recipe-preview p {
     grid-area: text;
-    font: 500 italic .2rem Montserrat;
+    font: 500 italic 1.1rem Montserrat;
     margin: 0;
 }
 
@@ -206,8 +206,14 @@ ul.list-of-steps li::before {
     }
     
     #recipe-preview #title { font-size: 1.5rem }
+    #recipe-preview .description {
+        grid-template-columns: auto 95%;
+        grid-template-rows: auto;
+        grid-template-areas: "svg text";
+        gap: 0vh 4vw;
+    }
     #recipe-preview p {
-        font: 100 italic .1rem Montserrat;
+        font: 100 italic 1rem Montserrat;
         width: 95%;
     }
 
