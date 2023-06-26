@@ -68,12 +68,25 @@ main {
     margin-top: 25%;
 }
 
-#recipe-preview img {
-    height: auto;
+.wrapper {
+    margin-top: 5%;
+    width: 100%; 
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+  
+.child {
     width: 100%;
-    margin-top: 5vh;
+    height: auto;
+    -webkit-user-drag: none;
+    transition: all .5s;
 }
 
+.wrapper:hover .child,
+.wrapper:focus .child {
+  transform: scale(1.2);
+}
 
 #ingredients-and-time {
     grid-area: ingredients;
@@ -107,8 +120,15 @@ main {
     margin: 0 10px 0 0;
     height: 21px;
     width: 21px;
+    accent-color: green;
+    
 } 
-.ingredients .food-measurements ul li label { cursor: pointer;} 
+.ingredients .food-measurements ul li label { cursor: pointer; } 
+
+input[type='checkbox']:checked + label {
+    text-decoration: green solid line-through 2px;
+    transition: all 1s ease;
+}
 
 #ingredients-and-time ul.times { 
     grid-area: timeSection;
@@ -170,7 +190,10 @@ ul.list-of-steps li {
     font: 400 1rem 'Montserrat', sans-serif;
     counter-increment: my-awesome-counter;
     position: relative;
+    transition: text-decoration .5s ease;
 }
+
+ul.list-of-steps li:hover { text-decoration: orange solid underline 2px; }
 
 ul.list-of-steps li::before {
     content: counter(my-awesome-counter);
