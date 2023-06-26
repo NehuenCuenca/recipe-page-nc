@@ -140,7 +140,7 @@ ul.times li.time-item .text{
     grid-area: text;
     display: flex;
     flex-direction: column;
-    font: 400 0.1rem 'Montserrat', sans-serif;
+    font: 400 1.1rem 'Montserrat', sans-serif;
 }
 ul.times li.time-item .text :nth-child(1){ 
     color: #BDBDBD;
@@ -189,7 +189,7 @@ ul.list-of-steps li::before {
 }
 
 #instructions #source-link {
-    font: 400 italic 0.1rem 'Montserrat', sans-serif;
+    font: 400 italic 1rem 'Montserrat', sans-serif;
     color: #BDBDBD;
 }
 
@@ -249,6 +249,7 @@ ul.list-of-steps li::before {
         width: 33%; 
         grid-column: 1 / -1;
     }
+    ul.times li.time-item .text { font: 400 1rem 'Montserrat', sans-serif }
     ul.times li.time-item .text :nth-child(1){ white-space: nowrap; }
 
     .ingredients .food-measurements .food-name { font-size: 1.2rem;}
